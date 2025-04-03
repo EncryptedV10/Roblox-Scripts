@@ -15,5 +15,6 @@ return {
     "XxHaHaGetBetterXx",
     "Stunnerboy59",
     "Br0ken_6660",
-    "qw1472583"
+    "qw1472583",
+    "Hologrindz"
 }
