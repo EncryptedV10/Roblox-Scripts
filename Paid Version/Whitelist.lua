@@ -1,0 +1,19 @@
+return {
+    "Shadow_RipperZ0",
+    "Mrbignewcoming3",
+    "Hi_dorihi",
+    "77Blxssed",
+    "Mariaa110222",
+    "Xxdarkiller_10ZKT2",
+    "THEREAL_ANDR3W",
+    "SweetyCaandyy",
+    "poopgamer305",
+    "white_heaven09",
+    "bektai1890",
+    "sunciean",
+    "fadinmemorys",
+    "XxHaHaGetBetterXx",
+    "Stunnerboy59",
+    "Br0ken_6660",
+    "qw1472583"
+}
