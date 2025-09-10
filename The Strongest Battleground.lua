@@ -26,6 +26,9 @@ local JumpPowerBox = HomeTab:CreateTextbox("JumpPower", "Set your jumppower", fu
     end
 end)
 
+local defaultWalkSpeed = humanoid.WalkSpeed
+local defaultJumpPower = humanoid.JumpPower
+
 local WalkSpeedToggle
 WalkSpeedToggle = HomeTab:CreateToggle("WalkSpeed Toggle", "Keep WalkSpeed applied", function(state)
     task.spawn(function()
@@ -33,6 +36,7 @@ WalkSpeedToggle = HomeTab:CreateToggle("WalkSpeed Toggle", "Keep WalkSpeed appli
             humanoid.WalkSpeed = tonumber(WalkSpeedBox.Text) or humanoid.WalkSpeed
             task.wait(0.1)
         end
+        humanoid.WalkSpeed = defaultWalkSpeed
     end)
 end)
 
@@ -43,6 +47,7 @@ JumpPowerToggle = HomeTab:CreateToggle("JumpPower Toggle", "Keep JumpPower appli
             humanoid.JumpPower = tonumber(JumpPowerBox.Text) or humanoid.JumpPower
             task.wait(0.1)
         end
+        humanoid.JumpPower = defaultJumpPower
     end)
 end)
 
