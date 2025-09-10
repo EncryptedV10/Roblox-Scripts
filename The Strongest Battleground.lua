@@ -32,7 +32,6 @@ WalkSpeedToggle = HomeTab:CreateToggle("WalkSpeed Toggle", "Keep WalkSpeed appli
         while state do
             humanoid.WalkSpeed = tonumber(WalkSpeedBox.Text) or humanoid.WalkSpeed
             task.wait(0.1)
-            state = WalkSpeedToggle:GetState()
         end
     end)
 end)
@@ -43,10 +42,8 @@ JumpPowerToggle = HomeTab:CreateToggle("JumpPower Toggle", "Keep JumpPower appli
         while state do
             humanoid.JumpPower = tonumber(JumpPowerBox.Text) or humanoid.JumpPower
             task.wait(0.1)
-            state = JumpPowerToggle:GetState()
         end
     end)
 end)
 
 local MainTab = Library:CreateTab("Main", "113339774911055")
-
