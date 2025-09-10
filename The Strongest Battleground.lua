@@ -1,3 +1,4 @@
+_G.tokenvar = tostring(math.random(100000, 999999))
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
