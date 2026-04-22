@@ -4,8 +4,8 @@ local Loaded_Var1 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fl
 _G.Key = ""
 isfile("EpicHubKey.txt")
 local Window = Loaded_Var1:CreateWindow({
-    SubTitle = "by Liam and EpicDeevv",
-    Title = "RTX Hub Key System ",
+    SubTitle = "by UnoXLuna",
+    Title = "Volcano Hub X Key System ",
     MinimizeKey = Enum.KeyCode.LeftControl,
     Theme = "Dark",
     Acrylic = true,
@@ -43,10 +43,10 @@ local _ = AddTab_2:AddButton({
     Title = "Check Key",
     Callback = function(p1_0, p2_0)
         local G_Key_2 = _G.Key;
-        local p1_0_is_string = (p1_0 == "RTXhubOnTop");
+        local p1_0_is_string = (p1_0 == "Volcanohub2026");
         -- false, eq id 1
         local G_Key_3 = _G.Key;
-        local p1_0_is_string_2 = (p1_0 == "RTXhubOnTop");
+        local p1_0_is_string_2 = (p1_0 == "Volcanohub2026");
         -- false, eq id 2
         local Notify_3 = Loaded_Var1.Notify;
         local Notify_4 = Loaded_Var1:Notify({
@@ -57,10 +57,10 @@ local _ = AddTab_2:AddButton({
     end,
 })
 AddTab_4:AddParagraph({
-    Title = "Loader for Epic Hub",
+    Title = "Loader for Volcano Hub X",
 })
 local _ = AddTab_4:AddParagraph({
-    Title = "Made by Liam and EpicDeevv",
+    Title = "Made by UnoXLuna and halis",
 })
 AddTab_4:AddParagraph({
     Title = "Version [1.0]",
