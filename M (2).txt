@@ -1,0 +1,67 @@
+
+
+local Loaded_Var1 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+_G.Key = ""
+isfile("EpicHubKey.txt")
+local Window = Loaded_Var1:CreateWindow({
+    SubTitle = "by Liam and EpicDeevv",
+    Title = "RTX Hub Key System ",
+    MinimizeKey = Enum.KeyCode.LeftControl,
+    Theme = "Dark",
+    Acrylic = true,
+    TabWidth = 160,
+    Size = UDim2.fromOffset(450, 300),
+})
+local AddTab_2 = Window:AddTab({
+    Title = "Key System",
+    Icon = "key",
+})
+local AddTab_4 = Window:AddTab({
+    Title = "Info",
+    Icon = "info",
+})
+Window:SelectTab(1)
+AddTab_2:AddInput("Enter Key", {
+    Placeholder = "Enter Key...",
+    Title = "Key:",
+    Callback = function(p1_0, p2_0, p3_0, p4_0, p5_0, p6_0)
+        _G.Key = p1_0
+    end,
+})
+AddTab_2:AddButton({
+    Title = "Get Key (Discord)",
+    Callback = function(p1_0, p2_0, p3_0, p4_0)
+        Env.setclipboard("https://discord.gg/b2FgFgPf")
+        Loaded_Var1:Notify({
+            Duration = 4,
+            Title = "Invite Copied",
+            Content = "You can continue to Discord now",
+        })
+    end,
+})
+local _ = AddTab_2:AddButton({
+    Title = "Check Key",
+    Callback = function(p1_0, p2_0)
+        local G_Key_2 = _G.Key;
+        local p1_0_is_string = (p1_0 == "RTXhubOnTop");
+        -- false, eq id 1
+        local G_Key_3 = _G.Key;
+        local p1_0_is_string_2 = (p1_0 == "RTXhubOnTop");
+        -- false, eq id 2
+        local Notify_3 = Loaded_Var1.Notify;
+        local Notify_4 = Loaded_Var1:Notify({
+            Duration = 2,
+            Title = "Invalid Key",
+            Content = "Please try again",
+        });
+    end,
+})
+AddTab_4:AddParagraph({
+    Title = "Loader for Epic Hub",
+})
+local _ = AddTab_4:AddParagraph({
+    Title = "Made by Liam and EpicDeevv",
+})
+AddTab_4:AddParagraph({
+    Title = "Version [1.0]",
+})
