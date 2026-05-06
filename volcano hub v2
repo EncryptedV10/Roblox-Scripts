@@ -99,7 +99,7 @@ local localPlayer = Players.LocalPlayer
 local playerName = localPlayer.Name
 local displayName = localPlayer.DisplayName
 
-local windowTitle = "Volcano Hub X || Public ||- " .. displayName
+local windowTitle = "Spectra Hub X || Public ||- " .. displayName
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/imhenne187/SilenceElerium/refs/heads/main/src/SilenceEleriumLibrary.luau"))()
 
